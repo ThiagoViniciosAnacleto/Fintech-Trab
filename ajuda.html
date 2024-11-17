@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Fintech</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#saiba-mais">Saiba Mais</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn login">Login</button>
+                <button class="btn register">Registro</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-header">
+            <h1>Precisou de ajuda?</h1>
+            <p>Entre em contato conosco a partir do formulário a seguir:</p>
+            <form action="/enviar-mensagem" method="POST">
+                <!-- Campo para Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+    
+                <!-- Campo para E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+    
+                <!-- Campo para Assunto -->
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+    
+                <!-- Campo para Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="5" required></textarea>
+    
+                <!-- Botão de Enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <h2>Fintech</h2>
+                <address>
+                    Rua Itajubá, n° 673,<br>
+                    Portão, 81070-190. Curitiba - PR<br>
+                </address>
+                <p><strong>Siga-nos</strong></p>
+                <div class="social-icons">
+                    <a href="#"><img src="img/media-social-icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/media-social-icons/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="img/media-social-icons/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="img/media-social-icons/twitter-x.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/media-social-icons/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Central de Relacionamento</h3>
+                <p><strong>ATENDIMENTO</strong> - 06h00 às 22h00</p>
+                <p>Capitais e regiões metropolitanas:</p>
+                <button>9999-9999</button>
+                <button>9999-9999</button>
+                <p>Interior e demais localidades:</p>
+                <button>9999-9999</button>
+                <p>WhatsApp:</p>
+                <button>9999-9999</button>
+                <button>FALE CONOSCO</button>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Ouvidoria</h3>
+                <p><strong>SEGUNDA À SEXTA</strong> - 9:15 às 17:30<br>Exceto feriados</p>
+                <p>Todas as regiões:</p>
+                <button>0800-999-999</button>
+                <p>Deficiência auditiva e de fala:</p>
+                <button>0800-999-999</button>
+                <button>FALE CONOSCO</button>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Canal de Ética</h3>
+                <p>Todas as regiões:</p>
+                <button>0800-999-999</button>
+                <p>
+                    Site: <a href="#">Contato</a>
+                </p>
+                <p>
+                    Código de Conduta Getnet:<br>
+                    <a href="#">Clique aqui para acessá-lo!</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Fintech - Todos os direitos reservados CNPJ: 12.345.678/9999-10</p>
+        </div>
+    </footer>    
+</body>
+</html>
