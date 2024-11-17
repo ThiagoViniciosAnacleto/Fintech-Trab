@@ -1,0 +1,305 @@
+/* Variáveis de cores */
+:root {
+    --cor-fundo: #1c2d4f;
+    --cor-primaria: #4a90e2;
+    --cor-secundaria: #357ab7;
+    --cor-texto: #fff;
+    --cor-hover: #333;
+    --cor-fundo-claro: #f9f9f9;
+    --cor-texto-claro: #333;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Reseta estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-fundo-claro);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--cor-fundo);
+    padding: 10px 20px;
+    color: var(--cor-texto);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    color: var(--cor-primaria);
+}
+
+/* Botões */
+.btn {
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.login:hover {
+    background-color: #555;
+}
+
+.register {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+}
+
+.register:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Main Section */
+/* Main Section */
+main {
+    flex: 1; /* Faz o main ocupar o espaço disponível */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    font-size: 1.8em;
+    color: #4a90e2;
+}
+
+.main-header p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.filter-buttons button span {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.filter-buttons button:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+/* Product Cards */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2.product-tag {
+    font-size: 0.9em;
+    background-color: #4a90e2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .price {
+    font-size: 1em;
+    margin: 15px 0;
+    color: #4a90e2;
+}
+
+.card button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.card button:hover {
+    background-color: #4a90e2;
+}
+
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    background-color: #eee;
+    color: var(--cor-texto-claro);
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.filter-buttons button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.preco-original {
+    text-decoration: line-through;  /* Risco no preço original */
+    color: #4a90e2;                   /* Cor para o texto riscado */
+    margin-right: 10px;            /* Espaçamento entre os preços */
+}
+
+.preco-desconto {
+    color: #d00;                /* Cor para o preço com desconto */
+   
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 20px 40px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
