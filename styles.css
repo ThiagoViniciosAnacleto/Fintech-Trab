@@ -291,8 +291,8 @@ main {
 
 .vantagens {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Espaço entre as colunas */
     margin-top: 20px;
 }
 
@@ -304,7 +304,7 @@ main {
 .vantagens .vantagem-card {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
