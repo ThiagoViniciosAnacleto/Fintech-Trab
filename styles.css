@@ -11,6 +11,7 @@
 
 html, body {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 /* Reseta estilos padrões */
@@ -34,6 +35,17 @@ header {
     background-color: var(--cor-fundo);
     padding: 10px 20px;
     color: var(--cor-texto);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 1%; /* Ajuste o tamanho da logo conforme necessário */
+    margin-right: 5px; /* Espaçamento entre a logo e o nome */
 }
 
 .navbar {
@@ -101,6 +113,7 @@ form {
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
+    align-items: center;
 }
 
 
@@ -128,6 +141,34 @@ form button {
 
 form button:hover {
     background-color: #4a90e2;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 25px);
+    align-items: center;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Espaço entre o botão e o texto */
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    background-color: #e7ffe7;
+    color: #2d862d;
+    padding: 15px;
+    border: 1px solid #2d862d;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.success-message.active {
+    display: block;
 }
 
 /* Main Section */
@@ -180,6 +221,25 @@ main {
 .filter-buttons button:hover {
     background-color: #4a90e2;
     color: #fff;
+}
+
+.produto {
+    align-items: center;
+}
+
+.img-produto {
+    width: 512px;
+    height: 512px;
+}
+
+.descricao-produto p {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.product-card {
+    align-items: center;
 }
 
 /* Product Cards */
@@ -363,4 +423,119 @@ footer {
     .footer-container {
         flex-direction: column;
     }
+}
+
+#endereco {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.endereco-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.endereco-container p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.endereco-container address {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ajuda-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+.ajuda-video-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#ajuda {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#video {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ajuda h2, #video h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+#ajuda ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ajuda ul li {
+    margin: 10px 0;
+}
+
+#ajuda ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#ajuda ul li a:hover {
+    text-decoration: underline;
+}
+
+video {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    display: none; /* Ocultar a mensagem por padrão */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
+
+.success-message img {
+    width: 50px; /* Tamanho do ícone */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#mensagem-sucesso:target {
+    display: block; /* Exibir a mensagem quando o alvo for alcançado */
 }
