@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fintech</title>
+    <title>TrueCoin</title>
+    <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">Fintech</a>
+                <a href="#">TrueCoin</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#vantagens">Vantagens</a></li>
-                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="#video">Funcionamento</a></li>
+                <li><a href="#endereco">Nosso endereço</a></li>
+                <li><a href="#ajuda">Ajuda</a></li> 
             </ul>
             <div class="nav-buttons">
                 <button class="btn login">Login</button>
@@ -38,31 +41,32 @@
             </div>
         </div>
     
+        <section id="produtos">
         <div class="product-cards">
             <div class="card">
                 <h2 class="product-tag">Ideal para pessoa física</h2>
-                <img src="img/maquininha1.png" alt="Maquininha Mini">
+                <a href="maquininha1.html"><img src="img/maquininha1.png" alt="Maquininha Mini"></a>
                 <h3>Maquininha Mini</h3>
                 <p>Para quem está começando</p>
                 <ul>
                     <li>Wi-fi, chip 3G e plano de dados grátis</li>
                     <li>Comprovante digital</li>
-                    <li>Visor colorido</li>
+                    <li>Visor Rápido</li>
                     <li>Pagamento por aproximação, Pix, QR Code e Chip</li>
                 </ul>
                 <p class="price">Valor R$29,90 <strong>com Mensalidade Grátis</strong></p>
-                <button>Adicionar no carrinho</button>
+                <a href="maquininha1.html"><button>Consulte Taxas</button></a>
             </div>
     
             <div class="card">
                 <h2 class="product-tag">Ideal para pessoa jurídica</h2>
-                <img src="img/maquininha2.png" alt="Maquininha Clássica">
+                <a href="maquininha2.html"><img src="img/maquininha2.png" alt="Maquininha Clássica"></a>
                 <h3>Maquininha Clássica</h3>
                 <p>Sustentável e com bobina</p>
                 <ul>
-                    <li>Wi-fi, chip 3G e plano de dados grátis</li>
+                    <li>Wi-fi, chip 4G e plano de dados grátis</li>
                     <li>Comprovante impresso e digital</li>
-                    <li>Tela touchscreen</li>
+                    <li>Visor Colorido</li>
                     <li>Pagamento por aproximação, Pix, QR Code e Chip</li>
                 </ul>
                 <p> Valor de
@@ -71,25 +75,27 @@
                     <span class="preco-desconto">R$59,90 <strong>com Mensalidade Grátis</strong></span>
                 </p>
                 
-                <button>Adicionar no carrinho</button>
+                <a href="maquininha2.html"><button>Consulte Taxas</button></a>
             </div>
 
             <div class="card">
                 <h2 class="product-tag">Ideal para pessoa jurídica</h2>
-                <img src="img/maquininha3.png" alt="Maquininha Top">
+                <a href="maquininha3.html"><img src="img/maquininha3.png" alt="Maquininha Top"></a>
                 <h3>Maquininha Top</h3>
                 <p>Para quem tá faturando muita grana</p>
                 <ul>
-                    <li>Wi-fi, chip 4G e plano de dados grátis</li>
+                    <li>Wi-fi, chip 5G e plano de dados grátis</li>
                     <li>Comprovante digital</li>
-                    <li>Visor colorido</li>
+                    <li>Tela TouchScreen</li>
                     <li>Pagamento por aproximação, Pix, QR Code e Chip</li>
                 </ul>
                 <p class="price">Valor R$299,90 <strong>com Mensalidade Grátis</strong></p>
-                <button>Adicionar no carrinho</button>
+                <a href="maquininha3.html"><button>Consulte Taxas</button></a>
             </div>
         </div>
+        </section>
 
+        <section id="vantagens"> 
         <div class="vantagens">
             <div class="vantagem-card">
                 <a><img src="img/icons/conta.png" alt="Conta"></a>
@@ -97,7 +103,7 @@
             </div>
             <div class="vantagem-card">
                 <a><img src="img/icons/internet.png" alt="Internet"></a>
-                <p>Wi-Fi, 3G, 4G e plano de dados grátis</p>
+                <p>Wi-Fi, 3G, 4G, 5G e plano de dados grátis</p>
             </div>
             <div class="vantagem-card">
                 <a><img src="img/icons/qrcode.png" alt="Qrcode"></a>
@@ -112,25 +118,143 @@
                 <p>Comissão com recargas para celular</p>
             </div>
         </div>
+        </section>
     </main>
+    <section id="video">
+        <div class="video-container">
+            <!-- Seção de Ajuda -->
+            <main id="video">
+                <h2>Conheça o funcionamento das nossas maquininhas!</h2>
+                <p>Veja na prática como ela trabalha</p>
+            </main>
     
-    
-
+            <!-- Seção de Vídeo -->
+            <aside id="video">
+                <video controls width="100%">
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </aside>
+        </div>
+    </section>
+    <main>
+        <section id="endereco">
+            <div class="endereco-container">
+                <h2>Nosso Endereço</h2>
+                <p>Visite-nos em nossa sede para conhecer mais sobre nossos serviços e produtos!</p>
+                <address>
+                    Rua Itajubá, 673, Curitiba - PR
+                </address>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.0233748689816!2d-49.28594822510963!3d-25.469897777742493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46c0e88a5f9%3A0x6e0f2e6ff8f0e5d0!2sRua%20Itajub%C3%A1%2C%20673%20-%20Port%C3%A3o%2C%20Curitiba%20-%20PR%2C%2081070-190!5e0!3m2!1spt-BR!2sbr!4v1697907074293!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>       
+        
+        <section id="ajuda">
+            <div class="main-header">
+                <h1>Precisou de ajuda?</h1>
+                <form action="#mensagem-sucesso">
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+        
+                    <!-- E-mail -->
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+        
+                    <!-- Assunto -->
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+                    </div>
+        
+                    <!-- Telefone -->
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+        
+                    <!-- Opção única (radio buttons) -->
+                    <div class="form-group">
+                        <label>Como prefere ser contatado?</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="radio" id="contato-email" name="preferencia-contato" value="email" required>
+                                <label for="contato-email">E-mail</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="contato-telefone" name="preferencia-contato" value="telefone">
+                                <label for="contato-telefone">Telefone</label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Múltiplas opções (checkboxes) -->
+                    <div class="form-group">
+                        <label>Quais serviços você deseja informações?</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="servico-suporte" name="servico" value="suporte">
+                                <label for="servico-suporte">Suporte Técnico</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="servico-consultoria" name="servico" value="consultoria">
+                                <label for="servico-consultoria">Consultoria</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="servico-outros" name="servico" value="outros">
+                                <label for="servico-outros">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Mensagem -->
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="5" required></textarea>
+                    </div>
+        
+                    <!-- Botão de Enviar -->
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+        
+                <!-- Mensagem de Sucesso -->
+                <div id="mensagem-sucesso" class="success-message">
+                    <p>Mensagem enviada com sucesso!</p>
+                </div>
+            </div>
+        </section>      
+    </main>
     <footer>
         <div class="footer-container">
             <div class="footer-section logo-section">
-                <h2>Fintech</h2>
+                <h2>TrueCoin</h2>
                 <address>
                     Rua Itajubá, n° 673,<br>
                     Portão, 81070-190. Curitiba - PR<br>
                 </address>
                 <p><strong>Siga-nos</strong></p>
                 <div class="social-icons">
-                    <a href="#"><img src="img/media-social-icons/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="img/media-social-icons/youtube.png" alt="YouTube"></a>
-                    <a href="#"><img src="img/media-social-icons/linkedin.png" alt="LinkedIn"></a>
-                    <a href="#"><img src="img/media-social-icons/twitter-x.png" alt="Twitter"></a>
-                    <a href="#"><img src="img/media-social-icons/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"><img src="img/media-social-icons/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com"><img src="img/media-social-icons/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com"><img src="img/media-social-icons/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.x.com"><img src="img/media-social-icons/twitter-x.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com"><img src="img/media-social-icons/instagram.png" alt="Instagram"></a>
                 </div>
             </div>
     
@@ -165,13 +289,13 @@
                     Site: <a href="#">Contato</a>
                 </p>
                 <p>
-                    Código de Conduta Fintech:<br>
+                    Código de Conduta TrueCoin:<br>
                     <a href="#">Clique aqui para acessá-lo!</a>
                 </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>©2024 Fintech - Todos os direitos reservados CNPJ: 12.345.678/9999-10</p>
+            <p>©2024 TrueCoin - Todos os direitos reservados CNPJ: 12.345.678/9999-10</p>
         </div>
     </footer>    
 </body>
